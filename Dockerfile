@@ -1,9 +1,9 @@
 FROM ubuntu
-LABEL description="RHEL7 with Apache in Docker container"
+LABEL description="Ubuntu with Apache in Docker container"
 MAINTAINER Guenther Wagenhuber
-RUN yum install -y httpd
+RUN sudo apt install apache2
 EXPOSE 80
 ENV LogLevel "info"
 USER root
-ENTRYPOINT ["/usr/sbin/httpd"]
-CMD ["-D", "FOREGROUND"]
+ENTRYPOINT ["/bin/bash"]
+
