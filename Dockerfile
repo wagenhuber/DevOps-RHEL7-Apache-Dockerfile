@@ -1,4 +1,4 @@
-FROM rhel7
+FROM yjjy0921/redhat7.2
 LABEL description="RHEL7 with Apache in Docker container"
 MAINTAINER Guenther Wagenhuber
 RUN yum install -y httpd
